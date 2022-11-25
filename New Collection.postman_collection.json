@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "1692060f-ae32-44a6-b318-4312409e92b5",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2843093"
+	},
+	"item": [
+		{
+			"name": "https://d378-154-178-216-114.eu.ngrok.io/users/25",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "BBFF-SwfNf4IHd2AxK1ZAC16kZb2r4ha02D",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"username\": \"mostafafathy833\",\r\n        \"password\": \"P@ssw0rd\",\r\n        \"email\": \"mostafa@gmail.com\",\r\n        \"name\": {\r\n            \"firstname\": \"mostafa\",\r\n            \"lastname\": \"fathy\"\r\n        },\r\n        \"address\": [\r\n            {\r\n                \"city\": null,\r\n                \"street\": null,\r\n                \"zipcode\": null,\r\n                \"number\": 0,\r\n                \"geolocation\": null\r\n            }\r\n        ],\r\n        \"phone\": \"01093402662\",\r\n        \"id\": 25\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://industrial.api.ubidots.com/api/v1.6/datasources/622219829f6e780520ec6fa7/variables",
+					"protocol": "https",
+					"host": [
+						"industrial",
+						"api",
+						"ubidots",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1.6",
+						"datasources",
+						"622219829f6e780520ec6fa7",
+						"variables"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://industrial.api.ubidots.com/api/v1.6/devices/demo/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"value": "BBFF-SwfNf4IHd2AxK1ZAC16kZb2r4ha02D",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"fan\":{\"value\":2}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://industrial.api.ubidots.com/api/v1.6/devices/demo/",
+					"protocol": "https",
+					"host": [
+						"industrial",
+						"api",
+						"ubidots",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1.6",
+						"devices",
+						"demo",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
